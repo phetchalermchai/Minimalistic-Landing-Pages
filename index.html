@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Minimalistic Responsive Landing Pages (Community)</h1>
-</body>
+  </head>
+  <body>
+    <nav>
+        <div class="container-nav">
+            <div class="navbar">
+              <div class="nav-logo">
+                  <div class="circle"></div>
+                  <h1 class="logo-mobile">
+                    <a class="close" href="#test">Logo</a>
+                    <a class="open" href="#test">Logo</a>
+                  </h1>
+                  <h1 class="logo"><a href="/">Logo</a></h1>
+              </div>
+              <div class="nav-hamburger">
+                <img class="close" src="src/img/mobile/hamburger_black.svg" alt="hamburger">
+            </div>
+            </div>
+            <div class="nav-menu">
+                <a class="menu-mobile" href="#test">About</a>
+                <a class="menu-mobile" href="#test">Services</a>
+                <a class="menu-mobile" href="#test">Team</a>
+                <a class="menu-mobile" href="#test">Contact</a>
+                <a class="menu" href="#test">About</a>
+                <a class="menu" href="#test">Services</a>
+                <a class="menu" href="#test">Team</a>
+                <a class="menu" href="#test">Contact</a>
+                <div class="menu-icons">
+                  <img src="src/img/mobile/teenyicons_twitter-outline.svg" alt="twitter">
+                  <img src="src/img/mobile/mdi_instagram.svg" alt="instagram">
+                  <img src="src/img/mobile/la_linkedin.svg" alt="linkedin">
+                  <img src="src/img/mobile/ant-design_facebook-outlined.svg" alt="facebook">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+      <section>
+        <div class="container-sec1">
+          <div class="heading">
+            <h1>The dawn of a new era in health is here</h1>
+            <p id="test">
+              Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a. Diam lacus <br> 
+              platea orci vel elit blandit facilisis 
+            </p>
+          </div>
+          <div class="content">
+            <button type="button">Join now</button>
+            <div class="images">
+                <img src="src/img/mobile/jared-rice-xce530fBHrk-unsplash 1.svg" alt="meditate">
+                <img src="src/img/mobile/katherine-hanlon-mod2s3-qFOc-unsplash 1.svg" alt="minimalistic">
+            </div>
+            <div class="images-tablet">
+                <img src="src/img/tablet/jared-rice-xce530fBHrk-unsplash 1.svg" alt="meditate">
+                <img src="src/img/tablet/katherine-hanlon-mod2s3-qFOc-unsplash 1.svg" alt="minimalistic">
+            </div>
+            <div class="images-desktop">
+                <img src="src/img/desktop/jared-rice-xce530fBHrk-unsplash 1.svg" alt="meditate">
+                <img src="src/img/desktop/katherine-hanlon-mod2s3-qFOc-unsplash 1.svg" alt="minimalistic">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-sec2">
+          <div class="heading">
+            <h2>Wellbeing 
+              is well doing</h2>
+          </div>
+          <div class="content">
+              <div class="sub-content">
+                <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="0.5" width="58" height="57" rx="9" fill="#285E67"/>
+                  <path d="M41.7815 42.0799L40.2918 40.418C40.3925 38.2081 40.5588 27.3778 34.6657 20.8031C29.5663 15.1142 21.4815 14.5 18.2422 14.5C17.3149 14.5 16.7577 14.5491 16.7346 14.5512C16.3698 14.5841 16.08 14.9069 16.0509 15.3139C16.0136 15.8336 15.208 28.126 21.655 35.3178C26.7544 41.0067 34.8399 41.6205 38.0793 41.6205C38.5858 41.6205 38.9766 41.6059 39.2359 41.5926L40.7271 43.2562C40.8725 43.4189 41.0635 43.5 41.2545 43.5C41.4454 43.5 41.6364 43.4189 41.7819 43.2562C42.0728 42.9312 42.0728 42.4048 41.7815 42.0799ZM22.7094 34.1411C17.6085 28.4505 17.4455 18.8782 17.5089 16.176C17.7125 16.1694 17.9591 16.1648 18.2422 16.1648C21.2958 16.1648 28.9057 16.7315 33.6109 21.9802C38.133 27.025 38.7737 35.1181 38.817 38.7723L33.3129 32.6323L34.0059 26.006C34.0537 25.5495 33.7605 25.1363 33.3517 25.0831C32.9392 25.0306 32.5722 25.3568 32.5244 25.8129L31.9683 31.1319L28.2001 26.9285L27.6175 22.0093C27.5634 21.5537 27.1867 21.2316 26.7801 21.2932C26.3717 21.3536 26.0841 21.7717 26.1382 22.2274L26.4657 24.994L22.0962 20.119C21.8053 19.794 21.3323 19.794 21.0414 20.119C20.7501 20.444 20.7501 20.9708 21.0414 21.2957L25.4105 26.1699L22.9313 25.8046C22.5229 25.7447 22.1477 26.065 22.094 26.5207C22.0399 26.9763 22.3275 27.3945 22.7359 27.4548L27.1445 28.1048L30.9128 32.3082L26.1453 32.9286C25.7361 32.9819 25.4433 33.395 25.4911 33.8515C25.5355 34.2755 25.8577 34.5876 26.2311 34.5876C26.2598 34.5876 26.2889 34.5859 26.3184 34.5818L32.2577 33.8091L37.7667 39.9548C34.5337 39.9145 27.2616 39.2196 22.7094 34.1411Z" fill="white"/>
+                </svg>
+                <p>Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a. Diam lacus platea orci vel elit.</p>
+              </div>
+              <div class="sub-content">
+                <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="0.5" width="58" height="57" rx="9" fill="#285E67"/>
+                  <path d="M41.7815 42.0799L40.2918 40.418C40.3925 38.2081 40.5588 27.3778 34.6657 20.8031C29.5663 15.1142 21.4815 14.5 18.2422 14.5C17.3149 14.5 16.7577 14.5491 16.7346 14.5512C16.3698 14.5841 16.08 14.9069 16.0509 15.3139C16.0136 15.8336 15.208 28.126 21.655 35.3178C26.7544 41.0067 34.8399 41.6205 38.0793 41.6205C38.5858 41.6205 38.9766 41.6059 39.2359 41.5926L40.7271 43.2562C40.8725 43.4189 41.0635 43.5 41.2545 43.5C41.4454 43.5 41.6364 43.4189 41.7819 43.2562C42.0728 42.9312 42.0728 42.4048 41.7815 42.0799ZM22.7094 34.1411C17.6085 28.4505 17.4455 18.8782 17.5089 16.176C17.7125 16.1694 17.9591 16.1648 18.2422 16.1648C21.2958 16.1648 28.9057 16.7315 33.6109 21.9802C38.133 27.025 38.7737 35.1181 38.817 38.7723L33.3129 32.6323L34.0059 26.006C34.0537 25.5495 33.7605 25.1363 33.3517 25.0831C32.9392 25.0306 32.5722 25.3568 32.5244 25.8129L31.9683 31.1319L28.2001 26.9285L27.6175 22.0093C27.5634 21.5537 27.1867 21.2316 26.7801 21.2932C26.3717 21.3536 26.0841 21.7717 26.1382 22.2274L26.4657 24.994L22.0962 20.119C21.8053 19.794 21.3323 19.794 21.0414 20.119C20.7501 20.444 20.7501 20.9708 21.0414 21.2957L25.4105 26.1699L22.9313 25.8046C22.5229 25.7447 22.1477 26.065 22.094 26.5207C22.0399 26.9763 22.3275 27.3945 22.7359 27.4548L27.1445 28.1048L30.9128 32.3082L26.1453 32.9286C25.7361 32.9819 25.4433 33.395 25.4911 33.8515C25.5355 34.2755 25.8577 34.5876 26.2311 34.5876C26.2598 34.5876 26.2889 34.5859 26.3184 34.5818L32.2577 33.8091L37.7667 39.9548C34.5337 39.9145 27.2616 39.2196 22.7094 34.1411Z" fill="white"/>
+                </svg>
+                <p>Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a. Diam lacus platea orci vel elit.</p>
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="src/script/action.js"></script>
+  </body>
 </html>
