@@ -237,19 +237,19 @@ nav .container-nav.open .nav-menu .menu-icons img {
     column-gap: 2.5rem;
   }
 }
-section .container-sec1 {
+main section .container-sec1 {
   padding: 7.25rem 2.1875rem 0 2.1875rem;
   display: flex;
   flex-direction: column;
   row-gap: 2.0625rem;
 }
-section .container-sec1 .heading {
+main section .container-sec1 .heading {
   height: 100%;
   display: flex;
   flex-direction: column;
   row-gap: 1.0625rem;
 }
-section .container-sec1 .heading h1 {
+main section .container-sec1 .heading h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -258,7 +258,7 @@ section .container-sec1 .heading h1 {
   color: #2A2A2A;
   text-align: center;
 }
-section .container-sec1 .heading p {
+main section .container-sec1 .heading p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -267,16 +267,16 @@ section .container-sec1 .heading p {
   color: #2A2A2A;
   text-align: center;
 }
-section .container-sec1 .heading p br {
+main section .container-sec1 .heading p br {
   display: none;
 }
-section .container-sec1 .content {
+main section .container-sec1 .content {
   display: flex;
   flex-direction: column;
   row-gap: 3.5rem;
   height: 100%;
 }
-section .container-sec1 .content button {
+main section .container-sec1 .content button {
   align-self: center;
   width: 13.1875rem;
   height: 3.5rem;
@@ -291,13 +291,13 @@ section .container-sec1 .content button {
   line-height: 1.5;
   color: #FFFFFF;
 }
-section .container-sec1 .content .images {
+main section .container-sec1 .content .images {
   display: flex;
   flex-direction: column;
   row-gap: 1.75rem;
   width: 100%;
 }
-section .container-sec1 .content .images img {
+main section .container-sec1 .content .images img {
   width: 100%;
   align-self: center;
   max-width: 360px;
@@ -305,98 +305,13 @@ section .container-sec1 .content .images img {
   min-width: 250px;
   min-height: 271px;
 }
-section .container-sec1 .content .images-tablet {
+main section .container-sec1 .content .images-tablet {
   display: none;
 }
-section .container-sec1 .content .images-desktop {
+main section .container-sec1 .content .images-desktop {
   display: none;
 }
-
-@media screen and (min-width: 700px) {
-  section .container-sec1 {
-    padding: 7.25rem 4.375rem 0 4.375rem;
-    height: 55.25rem;
-  }
-  section .container-sec1 .heading h1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 4.0625rem;
-    line-height: 5.125rem;
-    color: #2A2A2A;
-  }
-  section .container-sec1 .heading p {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: #2A2A2A;
-  }
-  section .container-sec1 .heading p br {
-    display: block;
-  }
-  section .container-sec1 .content button {
-    width: 15.6875rem;
-    height: 3.5rem;
-    border-radius: 4.1875rem;
-    background-color: #285E67;
-    border: none;
-    color: #FFFFFF;
-  }
-  section .container-sec1 .content .images {
-    display: none;
-  }
-  section .container-sec1 .content .images-tablet {
-    display: flex;
-    flex-direction: row;
-    column-gap: 1.75rem;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  section .container-sec1 .content .images-tablet img {
-    width: 100%;
-    min-width: 226px;
-    min-height: 195px;
-    max-width: 427px;
-    max-height: 390px;
-  }
-  section .container-sec1 .content .images-desktop {
-    display: none;
-  }
-}
-@media screen and (min-width: 1025px) {
-  section .container-sec1 {
-    padding: 12.5rem 4.375rem 0 4.375rem;
-    height: 53.875rem;
-  }
-  section .container-sec1 .heading p br {
-    display: none;
-  }
-  section .container-sec1 .content .images {
-    display: none;
-  }
-  section .container-sec1 .content .images-tablet {
-    display: none;
-  }
-  section .container-sec1 .content .images-desktop {
-    display: flex;
-    flex-direction: row;
-    column-gap: 3rem;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  section .container-sec1 .content .images-desktop img {
-    width: 100%;
-    max-width: 626px;
-    max-height: 391px;
-    min-width: 419px;
-    min-height: 261px;
-  }
-}
-section .container-sec2 {
+main section .container-sec2 {
   margin: 2.25rem 2.1875rem;
   background-color: #F4F4F4;
   border-radius: 0.75rem;
@@ -404,16 +319,16 @@ section .container-sec2 {
   flex-direction: column;
   row-gap: 0rem;
 }
-section .container-sec2 article {
+main section .container-sec2 article {
   display: flex;
   flex-direction: column;
   row-gap: 2.5rem;
 }
-section .container-sec2 article .heading {
+main section .container-sec2 article .heading {
   padding: 4.65625rem 0 0 0;
   height: 100%;
 }
-section .container-sec2 article .heading h2 {
+main section .container-sec2 article .heading h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -423,20 +338,20 @@ section .container-sec2 article .heading h2 {
   text-align: center;
   padding: 0 2.65625rem;
 }
-section .container-sec2 article .content {
+main section .container-sec2 article .content {
   padding-bottom: 1.875rem;
   height: 100%;
   display: flex;
   flex-direction: column;
   row-gap: 1.625rem;
 }
-section .container-sec2 article .content .sub-content {
+main section .container-sec2 article .content .sub-content {
   display: flex;
   flex-direction: column;
   row-gap: 1.25rem;
   align-items: center;
 }
-section .container-sec2 article .content .sub-content p {
+main section .container-sec2 article .content .sub-content p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -446,117 +361,31 @@ section .container-sec2 article .content .sub-content p {
   text-align: center;
   padding: 0 3.65625rem;
 }
-section .container-sec2 .img-woman {
+main section .container-sec2 .img-woman {
   display: none;
 }
-
-@media screen and (min-width: 700px) {
-  section .container-sec2 {
-    margin: 5rem 4.375rem;
-  }
-  section .container-sec2 article {
-    row-gap: 4.3125rem;
-  }
-  section .container-sec2 article .heading {
-    padding: 4rem 0 0 0;
-  }
-  section .container-sec2 article .heading h2 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: clamp(2.5rem, 1.1497rem + 3.0864vw, 3.125rem);
-    line-height: 3.3125rem;
-    color: #2A2A2A;
-  }
-  section .container-sec2 article .content {
-    padding-bottom: 6.0625rem;
-    display: flex;
-    flex-direction: row;
-    column-gap: 3.3125rem;
-    row-gap: 0;
-    justify-content: center;
-  }
-  section .container-sec2 article .content .sub-content {
-    width: 30%;
-  }
-  section .container-sec2 article .content .sub-content p {
-    padding: 0 0.78125rem;
-  }
-}
-@media screen and (min-width: 1025px) {
-  section .container-sec2 {
-    margin: 6.5rem 4.8611111111%;
-    display: flex;
-    flex-direction: row;
-    column-gap: 0.3125rem;
-  }
-  section .container-sec2 article {
-    row-gap: 3.8125rem;
-    width: 60%;
-  }
-  section .container-sec2 article .heading {
-    padding: 6.1875rem 0 0 0;
-  }
-  section .container-sec2 article .heading h2 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: clamp(2.5rem, 1.1497rem + 3.0864vw, 3.125rem);
-    line-height: 3.875rem;
-    color: #2A2A2A;
-  }
-  section .container-sec2 article .content {
-    padding-bottom: 3.875rem;
-    display: flex;
-    flex-direction: row;
-    column-gap: 4.3125rem;
-  }
-  section .container-sec2 article .content .sub-content {
-    width: 32%;
-    align-items: start;
-  }
-  section .container-sec2 article .content .sub-content p {
-    padding: 0;
-    text-align: start;
-  }
-  section .container-sec2 .img-woman {
-    display: flex;
-    flex-direction: row;
-    column-gap: 0rem;
-    align-items: end;
-    justify-content: center;
-    width: 40%;
-    padding: 1.25rem 0;
-  }
-}
-@media screen and (min-width: 1441px) {
-  section .container-sec2 {
-    margin: 6.5rem auto;
-    max-width: 81.25rem;
-  }
-}
-section .container-sec3 {
+main section .container-sec3 {
   display: flex;
   flex-direction: column;
   row-gap: 1.5625rem;
   margin: 0 2.1875rem;
 }
-section .container-sec3 .product img {
+main section .container-sec3 .product img {
   width: 100%;
   border-radius: 1rem;
 }
-section .container-sec3 .product-content {
+main section .container-sec3 .product-content {
   display: flex;
   flex-direction: column;
   row-gap: 1.625rem;
 }
-section .container-sec3 .product-content .product-info {
+main section .container-sec3 .product-content .product-info {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
   text-align: center;
 }
-section .container-sec3 .product-content .product-info h2 {
+main section .container-sec3 .product-content .product-info h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -564,7 +393,7 @@ section .container-sec3 .product-content .product-info h2 {
   line-height: 3.0625rem;
   color: #2A2A2A;
 }
-section .container-sec3 .product-content .product-info p {
+main section .container-sec3 .product-content .product-info p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -572,20 +401,20 @@ section .container-sec3 .product-content .product-info p {
   line-height: 1.5rem;
   color: #2A2A2A;
 }
-section .container-sec3 .product-content .product-list {
+main section .container-sec3 .product-content .product-list {
   display: flex;
   flex-direction: column;
   row-gap: 1.625rem;
 }
-section .container-sec3 .product-content .product-list .product {
+main section .container-sec3 .product-content .product-list .product {
   display: flex;
   flex-direction: row;
   column-gap: 1.4375rem;
 }
-section .container-sec3 .product-content .product-list .product svg {
+main section .container-sec3 .product-content .product-list .product svg {
   width: 15%;
 }
-section .container-sec3 .product-content .product-list .product p {
+main section .container-sec3 .product-content .product-list .product p {
   width: 85%;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -594,36 +423,119 @@ section .container-sec3 .product-content .product-list .product p {
   line-height: 1.5rem;
   color: #285E67;
 }
-section .container-sec3 .product-content .product-list .product p span {
+main section .container-sec3 .product-content .product-list .product p span {
   display: none;
 }
 
 @media screen and (min-width: 700px) {
-  section .container-sec3 {
+  main section .container-sec1 {
+    padding: 7.25rem 4.375rem 0 4.375rem;
+    height: 55.25rem;
+  }
+  main section .container-sec1 .heading h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 4.0625rem;
+    line-height: 5.125rem;
+    color: #2A2A2A;
+  }
+  main section .container-sec1 .heading p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #2A2A2A;
+  }
+  main section .container-sec1 .heading p br {
+    display: block;
+  }
+  main section .container-sec1 .content button {
+    width: 15.6875rem;
+    height: 3.5rem;
+    border-radius: 4.1875rem;
+    background-color: #285E67;
+    border: none;
+    color: #FFFFFF;
+  }
+  main section .container-sec1 .content .images {
+    display: none;
+  }
+  main section .container-sec1 .content .images-tablet {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.75rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  main section .container-sec1 .content .images-tablet img {
+    width: 100%;
+    min-width: 226px;
+    min-height: 195px;
+    max-width: 427px;
+    max-height: 390px;
+  }
+  main section .container-sec1 .content .images-desktop {
+    display: none;
+  }
+  main section .container-sec2 {
+    margin: 5rem 4.375rem;
+  }
+  main section .container-sec2 article {
+    row-gap: 4.3125rem;
+  }
+  main section .container-sec2 article .heading {
+    padding: 4rem 0 0 0;
+  }
+  main section .container-sec2 article .heading h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(2.5rem, 1.1497rem + 3.0864vw, 3.125rem);
+    line-height: 3.3125rem;
+    color: #2A2A2A;
+  }
+  main section .container-sec2 article .content {
+    padding-bottom: 6.0625rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 3.3125rem;
+    row-gap: 0;
+    justify-content: center;
+  }
+  main section .container-sec2 article .content .sub-content {
+    width: 30%;
+  }
+  main section .container-sec2 article .content .sub-content p {
+    padding: 0 0.78125rem;
+  }
+  main section .container-sec3 {
     margin: 0 4.375rem;
     display: flex;
     flex-direction: row;
     column-gap: clamp(1.25rem, 0.3125rem + 1.9531vw, 1.5625rem);
     row-gap: 0rem;
   }
-  section .container-sec3 .product {
+  main section .container-sec3 .product {
     width: 50%;
   }
-  section .container-sec3 .product img {
+  main section .container-sec3 .product img {
     height: 100%;
     content: url("../img/tablet/organic.jpg");
   }
-  section .container-sec3 .product-content {
+  main section .container-sec3 .product-content {
     width: 50%;
     display: flex;
     flex-direction: column;
     row-gap: clamp(3rem, 2.25rem + 1.5625vw, 3.25rem);
     justify-content: space-around;
   }
-  section .container-sec3 .product-content .product-info {
+  main section .container-sec3 .product-content .product-info {
     text-align: start;
   }
-  section .container-sec3 .product-content .product-info h2 {
+  main section .container-sec3 .product-content .product-info h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -631,7 +543,7 @@ section .container-sec3 .product-content .product-list .product p span {
     line-height: clamp(1.5rem, -5.625rem + 14.8438vw, 3.875rem);
     color: #2A2A2A;
   }
-  section .container-sec3 .product-content .product-info p {
+  main section .container-sec3 .product-content .product-info p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -639,18 +551,18 @@ section .container-sec3 .product-content .product-list .product p span {
     line-height: clamp(1.25rem, 0.5rem + 1.5625vw, 1.5rem);
     color: #2A2A2A;
   }
-  section .container-sec3 .product-content .product-list {
+  main section .container-sec3 .product-content .product-list {
     display: flex;
     flex-direction: column;
     row-gap: clamp(1rem, -5.75rem + 14.0625vw, 3.25rem);
   }
-  section .container-sec3 .product-content .product-list .product {
+  main section .container-sec3 .product-content .product-list .product {
     width: 100%;
   }
-  section .container-sec3 .product-content .product-list .product svg {
+  main section .container-sec3 .product-content .product-list .product svg {
     width: 13%;
   }
-  section .container-sec3 .product-content .product-list .product p {
+  main section .container-sec3 .product-content .product-list .product p {
     width: 87%;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -659,36 +571,112 @@ section .container-sec3 .product-content .product-list .product p span {
     line-height: clamp(1.25rem, 0.5rem + 1.5625vw, 1.5rem);
     color: #285E67;
   }
-  section .container-sec3 .product-content .product-list .product p span {
+  main section .container-sec3 .product-content .product-list .product p span {
     display: inline;
   }
 }
 @media screen and (min-width: 1025px) {
-  section .container-sec3 {
+  main section .container-sec1 {
+    padding: 12.5rem 4.375rem 0 4.375rem;
+    height: 53.875rem;
+  }
+  main section .container-sec1 .heading p br {
+    display: none;
+  }
+  main section .container-sec1 .content .images {
+    display: none;
+  }
+  main section .container-sec1 .content .images-tablet {
+    display: none;
+  }
+  main section .container-sec1 .content .images-desktop {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  main section .container-sec1 .content .images-desktop img {
+    width: 100%;
+    max-width: 626px;
+    max-height: 391px;
+    min-width: 419px;
+    min-height: 261px;
+  }
+  main section .container-sec2 {
+    margin: 6.5rem 4.8611111111%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.3125rem;
+  }
+  main section .container-sec2 article {
+    row-gap: 3.8125rem;
+    width: 60%;
+  }
+  main section .container-sec2 article .heading {
+    padding: 6.1875rem 0 0 0;
+  }
+  main section .container-sec2 article .heading h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(2.5rem, 1.1497rem + 3.0864vw, 3.125rem);
+    line-height: 3.875rem;
+    color: #2A2A2A;
+  }
+  main section .container-sec2 article .content {
+    padding-bottom: 3.875rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 4.3125rem;
+  }
+  main section .container-sec2 article .content .sub-content {
+    width: 32%;
+    align-items: start;
+  }
+  main section .container-sec2 article .content .sub-content p {
+    padding: 0;
+    text-align: start;
+  }
+  main section .container-sec2 .img-woman {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0rem;
+    align-items: end;
+    justify-content: center;
+    width: 40%;
+    padding: 1.25rem 0;
+  }
+  main section .container-sec3 {
     display: flex;
     flex-direction: row;
     column-gap: clamp(2.5rem, 0.4932rem + 3.1325vw, 3.3125rem);
   }
-  section .container-sec3 .product img {
+  main section .container-sec3 .product img {
     content: url("../img/desktop/organic.jpg");
   }
-  section .container-sec3 .product-content {
+  main section .container-sec3 .product-content {
     justify-content: center;
   }
-  section .container-sec3 .product-content .product-list {
+  main section .container-sec3 .product-content .product-list {
     display: flex;
     flex-direction: column;
     row-gap: clamp(1rem, -4.2485rem + 8.1928vw, 3.125rem);
   }
-  section .container-sec3 .product-content .product-list .product svg {
+  main section .container-sec3 .product-content .product-list .product svg {
     width: 9%;
   }
-  section .container-sec3 .product-content .product-list .product p {
+  main section .container-sec3 .product-content .product-list .product p {
     width: 91%;
   }
 }
 @media screen and (min-width: 1441px) {
-  section .container-sec3 {
+  main section .container-sec2 {
+    margin: 6.5rem auto;
+    max-width: 81.25rem;
+  }
+  main section .container-sec3 {
     margin: 6.5rem auto;
     max-width: 81.25rem;
   }

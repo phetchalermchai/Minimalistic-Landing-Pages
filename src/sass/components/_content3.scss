@@ -1,48 +1,50 @@
-// mobile
-section{
-    .container-sec3{
-        @include flex-column(1.5625rem);
-        margin: 0 2.1875rem;
-        
-        .product{
-            img{
-                width: 100%;
-                border-radius: 1rem;
-            }
-        }
-
-        .product-content{
-            @include flex-column(1.625rem);
-
-            .product-info{
-                @include flex-column(1rem);
-                text-align: center;
-
-                h2{
-                    @include semibold(clamp(2rem, 0.4762rem + 7.619vw, 2.5rem), 3.0625rem, $primary2);
-                }
-
-                p{
-                    @include regular(clamp(0.875rem, 0.494rem + 1.9048vw, 1rem), 1.5rem, $primary2);
+@mixin content3(){
+    // mobile
+    section{
+        .container-sec3{
+            @include flex-column(1.5625rem);
+            margin: 0 2.1875rem;
+            
+            .product{
+                img{
+                    width: 100%;
+                    border-radius: 1rem;
                 }
             }
-
-            .product-list{
+    
+            .product-content{
                 @include flex-column(1.625rem);
-
-                .product{
-                    @include flex-row(1.4375rem);
-
-                    svg{
-                        width: 15%;
+    
+                .product-info{
+                    @include flex-column(1rem);
+                    text-align: center;
+    
+                    h2{
+                        @include semibold(clamp(2rem, 0.4762rem + 7.619vw, 2.5rem), 3.0625rem, $primary2);
                     }
-
+    
                     p{
-                        width: 85%;
-                        @include regular(clamp(0.875rem, 0.494rem + 1.9048vw, 1rem), 1.5rem, $primary1);
-                        
-                        span{
-                            display: none;
+                        @include regular(clamp(0.875rem, 0.494rem + 1.9048vw, 1rem), 1.5rem, $primary2);
+                    }
+                }
+    
+                .product-list{
+                    @include flex-column(1.625rem);
+    
+                    .product{
+                        @include flex-row(1.4375rem);
+    
+                        svg{
+                            width: 15%;
+                        }
+    
+                        p{
+                            width: 85%;
+                            @include regular(clamp(0.875rem, 0.494rem + 1.9048vw, 1rem), 1.5rem, $primary1);
+                            
+                            span{
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -51,8 +53,8 @@ section{
     }
 }
 
-// tablet
-@media screen and (min-width:700px) {
+@mixin content3-tablet(){
+    // tablet
     section{
         .container-sec3{
             margin: 0 4.375rem;
@@ -66,23 +68,23 @@ section{
                     content: url("../img/tablet/organic.jpg");
                 }
             }
-
+    
             .product-content{
                 width: 50%;
                 @include flex-column(clamp(3rem, 2.25rem + 1.5625vw, 3.25rem));
                 justify-content: space-around;
-
+    
                 .product-info{
                     text-align: start;
                     h2{
                         @include semibold(clamp(1.25rem, -4.375rem + 11.7188vw, 3.125rem), clamp(1.5rem, -5.625rem + 14.8438vw, 3.875rem), $primary2);
                     }
-
+    
                     p{
                         @include regular(clamp(0.75rem, 0rem + 1.5625vw, 1rem), clamp(1.25rem, 0.5rem + 1.5625vw, 1.5rem), $primary2);
                     }
                 }
-
+    
                 .product-list{
                     @include flex-column(clamp(1rem, -5.75rem + 14.0625vw, 3.25rem));
                     .product{
@@ -90,7 +92,7 @@ section{
                         svg{
                             width: 13%;
                         }
-
+    
                         p{
                             width: 87%;
                             @include regular(clamp(0.75rem, 0rem + 1.5625vw, 1rem), clamp(1.25rem, 0.5rem + 1.5625vw, 1.5rem), $primary1);
@@ -106,29 +108,29 @@ section{
     }
 }
 
-// desktop
-@media screen and (min-width:1025px) {
+@mixin content3-desktop(){
+    // desktop
     section{
         .container-sec3{
             @include flex-row(clamp(2.5rem, 0.4932rem + 3.1325vw, 3.3125rem));
             
             .product{
-
+    
                 img{
                     content: url("../img/desktop/organic.jpg");
                 }
             }
-
+    
             .product-content{
                 justify-content: center;
-
+    
                 .product-list{
                     @include flex-column(clamp(1rem, -4.2485rem + 8.1928vw, 3.125rem));
                     .product{
                         svg{
                             width: 9%;
                         }
-
+    
                         p{
                             width: 91%;
                         }
@@ -139,7 +141,8 @@ section{
     }
 }
 
-@media screen and (min-width:1441px) {
+@mixin content3-desktop-xl(){
+    // desktop xl
     section{
         .container-sec3{
             margin: 6.5rem auto;

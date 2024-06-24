@@ -1,49 +1,51 @@
-// mobile
-section{
-    .container-sec2{
-        margin: 2.25rem 2.1875rem;
-        background-color: #F4F4F4;
-        border-radius: 0.75rem;
-        @include flex-column();
-
-        article{
-            @include flex-column(2.5rem);
-            .heading{
-                padding: 4.65625rem 0 0 0;
-                height: 100%;
-                h2{
-                    @include semibold(clamp(1.875rem, 0.0568rem + 9.0909vw, 2.5rem), 3.3125rem, $primary2);
-                    text-align:center;
-                    padding: 0 2.65625rem
-                    
+@mixin content2(){
+    // mobile
+    section{
+        .container-sec2{
+            margin: 2.25rem 2.1875rem;
+            background-color: #F4F4F4;
+            border-radius: 0.75rem;
+            @include flex-column();
+    
+            article{
+                @include flex-column(2.5rem);
+                .heading{
+                    padding: 4.65625rem 0 0 0;
+                    height: 100%;
+                    h2{
+                        @include semibold(clamp(1.875rem, 0.0568rem + 9.0909vw, 2.5rem), 3.3125rem, $primary2);
+                        text-align:center;
+                        padding: 0 2.65625rem
+                        
+                    }
                 }
-            }
-
-            .content{
-                padding-bottom: 1.875rem;
-                height: 100%;
-                @include flex-column(1.625rem);
-                .sub-content{
-                    @include flex-column(1.25rem);
-                    align-items: center;
-
-                    p{
-                        @include regular(clamp(0.875rem, 0.5114rem + 1.8182vw, 1rem), 1.5rem, $primary2);
-                        text-align: center;
-                        padding: 0 3.65625rem;
+    
+                .content{
+                    padding-bottom: 1.875rem;
+                    height: 100%;
+                    @include flex-column(1.625rem);
+                    .sub-content{
+                        @include flex-column(1.25rem);
+                        align-items: center;
+    
+                        p{
+                            @include regular(clamp(0.875rem, 0.5114rem + 1.8182vw, 1rem), 1.5rem, $primary2);
+                            text-align: center;
+                            padding: 0 3.65625rem;
+                        }
                     }
                 }
             }
-        }
-        
-        .img-woman{
-            display: none;
+            
+            .img-woman{
+                display: none;
+            }
         }
     }
 }
 
-// tablet
-@media screen and (min-width:700px) {
+@mixin content2-tablet(){
+    // tablet
     section{
         .container-sec2{
             margin: 5rem 4.375rem;
@@ -76,24 +78,24 @@ section{
     }
 }
 
-// desktop
-@media screen and (min-width:1025px) {
+@mixin content2-desktop(){
+    // desktop
     section{
         .container-sec2{
             margin: 6.5rem 4.861111111111111%;
             @include flex-row(0.3125rem);
-
+    
             article{
                 row-gap: 3.8125rem;
                 width: 60%;
-
+    
                 .heading{
                     padding: 6.1875rem 0 0 0;
                     h2{
                         @include semibold(clamp(2.5rem, 1.1497rem + 3.0864vw, 3.125rem), 3.875rem, $primary2);
                     }
                 }
-
+    
                 .content{
                     padding-bottom: 3.875rem;
                     @include flex-row(4.3125rem);
@@ -107,7 +109,7 @@ section{
                     }
                 }
             }
-
+    
             .img-woman{
                 @include flex-row();
                 align-items: end;
@@ -115,13 +117,13 @@ section{
                 width: 40%;
                 padding: 1.25rem 0;
             }
-
+    
         }
     }
 }
 
-// desktop xl
-@media screen and (min-width:1441px) {
+@mixin content2-desktop-xl(){
+    // desktop xl
     section{
         .container-sec2{
             margin: 6.5rem auto;

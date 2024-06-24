@@ -3,6 +3,32 @@
 @import "content2";
 @import "content3";
 
+
 main{
-    
+    @include content1();
+    @include content2();
+    @include content3();
+}
+
+@media screen and (min-width:700px) {
+    main{
+        @include content1-tablet();
+        @include content2-tablet();
+        @include content3-tablet();
+    }
+}
+
+@media screen and (min-width:1025px) {
+    main{
+        @include content1-desktop();
+        @include content2-desktop();
+        @include content3-desktop();
+    }
+}
+
+@media screen and (min-width:1441px) {
+    main{
+        @include content2-desktop-xl();
+        @include content3-desktop-xl();
+    }
 }

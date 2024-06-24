@@ -1,106 +1,55 @@
-// mobile
-section{
-    .container-sec1{
-        padding: 7.25rem 2.1875rem 0 2.1875rem;
-        @include flex-column(2.0625rem);
-
-        .heading{
-            height: 100%;
-            @include flex-column(1.0625rem);
-            h1{
-                @include semibold(2.375rem, 2.9375rem, $primary2);
-                text-align: center;
-            }
-            p{
-                @include regular(1rem, 1.5rem, $primary2);
-                text-align: center;
-
-                br{
-                    display: none
-                }
-            }
-        }
-
-        .content{
-            @include flex-column(3.5rem);
-            height: 100%;
-
-            button{
-                align-self: center;
-                @include btn(13.1875rem, 3.5rem, 4.1875rem, $primary1, none, $primary4);
-                @include semibold(1.375rem, 1.5, $primary4);
-            }
-
-            .images{
-                @include flex-column(1.75rem);
-                width: 100%;
-                
-                img{
-                    width: 100%;
-                    align-self: center;
-                    max-width: 360px;
-                    max-height: 390px;
-                    min-width: 250px;
-                    min-height: 271px;
-                }
-            }
-
-            .images-tablet{
-                display: none;
-            }
-
-            .images-desktop{
-                display: none;
-            }
-        }
-    }
-}
-
-// tablet
-@media screen and (min-width:700px) {
+@mixin content1(){
+    // mobile
     section{
         .container-sec1{
-            padding: 7.25rem 4.375rem 0 4.375rem;
-            height: 55.25rem;
-
+            padding: 7.25rem 2.1875rem 0 2.1875rem;
+            @include flex-column(2.0625rem);
+    
             .heading{
+                height: 100%;
+                @include flex-column(1.0625rem);
                 h1{
-                    @include semibold(4.0625rem, 5.125rem, $primary2);
+                    @include semibold(2.375rem, 2.9375rem, $primary2);
+                    text-align: center;
                 }
                 p{
                     @include regular(1rem, 1.5rem, $primary2);
-
+                    text-align: center;
+    
                     br{
-                        display: block
+                        display: none
                     }
                 }
             }
-
+    
             .content{
-
+                @include flex-column(3.5rem);
+                height: 100%;
+    
                 button{
-                    @include btn(15.6875rem, 3.5rem, 4.1875rem, $primary1, none, $primary4);
+                    align-self: center;
+                    @include btn(13.1875rem, 3.5rem, 4.1875rem, $primary1, none, $primary4);
+                    @include semibold(1.375rem, 1.5, $primary4);
                 }
-
+    
                 .images{
-                    display: none
-                }
-
-                .images-tablet{
-                    @include flex-row(1.75rem);
-                    align-items: center;
-                    justify-content: center;
+                    @include flex-column(1.75rem);
                     width: 100%;
-
+                    
                     img{
                         width: 100%;
-                        min-width: 226px;
-                        min-height: 195px;
-                        max-width: 427px;
+                        align-self: center;
+                        max-width: 360px;
                         max-height: 390px;
+                        min-width: 250px;
+                        min-height: 271px;
                     }
                 }
-
+    
+                .images-tablet{
+                    display: none;
+                }
+    
                 .images-desktop{
                     display: none;
                 }
@@ -109,39 +58,93 @@ section{
     }
 }
 
-// desktop
-@media screen and (min-width:1025px) {
+
+@mixin content1-tablet(){
+    // tablet
+    section{
+        .container-sec1{
+            padding: 7.25rem 4.375rem 0 4.375rem;
+            height: 55.25rem;
+    
+            .heading{
+                h1{
+                    @include semibold(4.0625rem, 5.125rem, $primary2);
+                }
+                p{
+                    @include regular(1rem, 1.5rem, $primary2);
+    
+                    br{
+                        display: block
+                    }
+                }
+            }
+    
+            .content{
+    
+                button{
+                    @include btn(15.6875rem, 3.5rem, 4.1875rem, $primary1, none, $primary4);
+                }
+    
+                .images{
+                    display: none
+                }
+    
+                .images-tablet{
+                    @include flex-row(1.75rem);
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+    
+                    img{
+                        width: 100%;
+                        min-width: 226px;
+                        min-height: 195px;
+                        max-width: 427px;
+                        max-height: 390px;
+                    }
+                }
+    
+                .images-desktop{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@mixin content1-desktop(){
+    // desktop
     section{
         .container-sec1{
             padding: 12.5rem 4.375rem 0 4.375rem;
             height: 53.875rem;
-
+    
             .heading{
                 
                 p{
-
+    
                     br{
                         display: none
                     }
                 }
             }
-
+    
             .content{
-
+    
                 .images{
                     display: none
                 }
-
+    
                 .images-tablet{
                    display: none
                 }
-
+    
                 .images-desktop{
                     @include flex-row(3rem);
                     justify-content: center;
                     align-items: center;
                     width: 100%;
-
+    
                     img{
                         width: 100%;
                         max-width: 626px;
@@ -154,5 +157,3 @@ section{
         }
     }
 }
-
-
