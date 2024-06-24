@@ -1,0 +1,54 @@
+$primary1 : #285E67;
+$primary2 : #2A2A2A;
+$primary3 : #EBBFAE;
+$primary4 : #FFFFFF;
+
+@mixin regular($fs,$lh,$color) {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: $fs;
+    line-height: $lh;
+    color: $color;
+}
+  
+@mixin semibold($fs,$lh,$color) {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: $fs;
+    line-height: $lh;
+    color: $color;
+}
+
+@mixin btn($width,$height,$radius,$bgcolor,$border,$color) {
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+    background-color: $bgcolor;
+    border: $border;
+    color: $color;
+}
+
+@mixin flex-column($row-gap:0rem) {
+    display: flex;
+    flex-direction: column;
+    row-gap: $row-gap;
+}
+
+@mixin flex-row($col-gap:0rem) {
+    display: flex;
+    flex-direction: row;
+    column-gap: $col-gap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-y: auto;
+}
