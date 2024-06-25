@@ -2,7 +2,8 @@
     // mobile
     section{
         .container-sec1{
-            padding: 7.25rem 2.1875rem 0 2.1875rem;
+            margin: 0 2.1875rem;
+            padding: 7.25rem 0 0 0;
             @include flex-column(2.0625rem);
     
             .heading{
@@ -30,28 +31,47 @@
                     align-self: center;
                     @include btn(13.1875rem, 3.5rem, 4.1875rem, $primary1, none, $primary4);
                     @include semibold(1.375rem, 1.5, $primary4);
+                    cursor: pointer;
                 }
     
                 .images{
                     @include flex-column(1.75rem);
-                    width: 100%;
                     
-                    img{
-                        width: 100%;
-                        align-self: center;
-                        max-width: 360px;
-                        max-height: 390px;
-                        min-width: 250px;
-                        min-height: 271px;
+                    .image-container{
+                        position: relative;
+
+                        img{
+                            width: 100%;
+                            display: block;
+                        }
+
+                        .image-overley{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 1rem;
+                            cursor: pointer;
+                            transition: 1s;
+                            opacity: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            h3{
+                                @include semibold(2rem,1.5rem,$primary4);
+                            }
+                        }
                     }
-                }
-    
-                .images-tablet{
-                    display: none;
-                }
-    
-                .images-desktop{
-                    display: none;
+
+                    .image-container:hover{
+
+                        .image-overley{
+                            background-color: rgba(0,0,0,0.7);
+                            opacity: 1;
+                        }
+                    }
                 }
             }
         }
@@ -63,8 +83,8 @@
     // tablet
     section{
         .container-sec1{
-            padding: 7.25rem 4.375rem 0 4.375rem;
-            height: 55.25rem;
+            margin: 0 4.375rem;
+            padding: 7.25rem 0 0 0;
     
             .heading{
                 h1{
@@ -86,26 +106,22 @@
                 }
     
                 .images{
-                    display: none
-                }
-    
-                .images-tablet{
                     @include flex-row(1.75rem);
                     align-items: center;
                     justify-content: center;
-                    width: 100%;
-    
-                    img{
-                        width: 100%;
-                        min-width: 226px;
-                        min-height: 195px;
-                        max-width: 427px;
-                        max-height: 390px;
+                    row-gap: 0;
+
+                    .image-container:nth-child(1){
+                        img{
+                            content: url("../img/tablet/minimalistic.jpg");
+                        }
                     }
-                }
-    
-                .images-desktop{
-                    display: none;
+                    .image-container:nth-child(2){
+
+                        img{
+                            content: url("../img/tablet/Clean-food.jpg");
+                        }
+                    }
                 }
             }
         }
@@ -116,9 +132,8 @@
     // desktop
     section{
         .container-sec1{
-            padding: 12.5rem 4.375rem 0 4.375rem;
-            height: 53.875rem;
-    
+            margin: 0 4.375rem;
+            padding: 12.5rem 0 0 0;
             .heading{
                 
                 p{
@@ -132,28 +147,33 @@
             .content{
     
                 .images{
-                    display: none
-                }
-    
-                .images-tablet{
-                   display: none
-                }
-    
-                .images-desktop{
-                    @include flex-row(3rem);
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-    
-                    img{
-                        width: 100%;
-                        max-width: 626px;
-                        max-height: 391px;
-                        min-width: 419px;
-                        min-height: 261px;
+                    @include flex-row(clamp(1.25rem, -3.0723rem + 6.747vw, 3rem));
+
+                    .image-container:nth-child(1){
+                        img{
+                            content: url("../img/desktop/minimalistic.jpg");
+                        }
+                    }
+                    .image-container:nth-child(2){
+                        img{
+                            content: url("../img/desktop/Clean-food.jpg");
+                        }
                     }
                 }
             }
+        }
+    }
+}
+
+@mixin content1-desktop-xl(){
+    // desktop xl
+    section{
+        .container-sec1{
+            // padding: 12.5rem clamp(4.375rem, -40.7503rem + 50.1044vw, 19.375rem) 0 clamp(4.375rem, -40.7503rem + 50.1044vw, 19.375rem);
+            
+            padding: 12.5rem 0 0 0;
+            max-width: 81.25rem;
+            margin: 0 auto;
         }
     }
 }

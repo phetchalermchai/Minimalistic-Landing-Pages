@@ -2,12 +2,17 @@
 @import "content1";
 @import "content2";
 @import "content3";
+@import "content4";
+@import "content5";
+
 
 
 main{
     @include content1();
     @include content2();
     @include content3();
+    @include content4();
+    @include content5();
 }
 
 @media screen and (min-width:700px) {
@@ -15,6 +20,8 @@ main{
         @include content1-tablet();
         @include content2-tablet();
         @include content3-tablet();
+        @include content4-tablet();
+        @include content5-tablet();
     }
 }
 
@@ -23,12 +30,17 @@ main{
         @include content1-desktop();
         @include content2-desktop();
         @include content3-desktop();
+        @include content4-desktop();
+        @include content5-desktop();
     }
 }
 
 @media screen and (min-width:1441px) {
     main{
+        @include content1-desktop-xl();
         @include content2-desktop-xl();
         @include content3-desktop-xl();
+        @include content4-desktop-xl();
+        @include content5-desktop-xl();
     }
 }

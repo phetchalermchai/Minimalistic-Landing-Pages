@@ -1,3 +1,11 @@
+@font-face {
+  font-family: PoppinsRegular;
+  src: url("../Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: PoppinsSemibold;
+  src: url("../Poppins/Poppins-SemiBold.ttf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +27,7 @@ nav .container-nav {
   background-color: #FFFFFF;
   padding: 0 2.1875rem;
   transition: 1s;
+  z-index: 999;
 }
 nav .container-nav .navbar {
   display: flex;
@@ -41,7 +50,7 @@ nav .container-nav .navbar .nav-logo .circle:hover {
   background: #EBBFAE;
 }
 nav .container-nav .navbar .nav-logo .logo-mobile .close {
-  font-family: "Poppins", sans-serif;
+  font-family: PoppinsSemibold, sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 1.3125rem;
@@ -56,7 +65,7 @@ nav .container-nav .navbar .nav-logo .logo-mobile .close:hover {
 nav .container-nav .navbar .nav-logo .logo-mobile .open {
   display: none;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: PoppinsSemibold, sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 1.3125rem;
@@ -84,7 +93,7 @@ nav .container-nav .nav-menu {
   flex-direction: column;
 }
 nav .container-nav .nav-menu a {
-  font-family: "Poppins", sans-serif;
+  font-family: PoppinsRegular, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 0rem;
@@ -104,7 +113,7 @@ nav .container-nav .nav-menu .menu-icons {
   transition: 1s;
   align-self: center;
 }
-nav .container-nav .nav-menu .menu-icons img {
+nav .container-nav .nav-menu .menu-icons svg {
   width: 0;
   height: 0;
   transition: 1s;
@@ -132,7 +141,7 @@ nav .container-nav.open .navbar .nav-logo:hover .circle {
   background: #EBBFAE;
 }
 nav .container-nav.open .navbar .nav-logo:hover .logo-mobile .open {
-  font-family: "Poppins", sans-serif;
+  font-family: PoppinsSemibold, sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 1.8rem;
@@ -149,7 +158,7 @@ nav .container-nav.open .nav-menu a {
   padding: 0.875rem;
   transition: 1s;
   opacity: 1;
-  font-family: "Poppins", sans-serif;
+  font-family: PoppinsRegular, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
@@ -163,7 +172,7 @@ nav .container-nav.open .nav-menu a:hover {
 nav .container-nav.open .nav-menu .menu-icons {
   height: 1.6875rem;
 }
-nav .container-nav.open .nav-menu .menu-icons img {
+nav .container-nav.open .nav-menu .menu-icons svg {
   width: 1.6875rem;
   height: 1.6875rem;
   margin: 0 0.5rem;
@@ -188,7 +197,7 @@ nav .container-nav.open .nav-menu .menu-icons img {
     display: inline;
   }
   nav .container-nav .navbar .nav-logo .logo a {
-    font-family: "Poppins", sans-serif;
+    font-family: PoppinsSemibold, sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 1.3125rem;
@@ -216,7 +225,7 @@ nav .container-nav.open .nav-menu .menu-icons img {
   }
   nav .container-nav .nav-menu .menu {
     display: inline;
-    font-family: "Poppins", sans-serif;
+    font-family: PoppinsRegular, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
@@ -233,12 +242,21 @@ nav .container-nav.open .nav-menu .menu-icons img {
   }
 }
 @media screen and (min-width: 1025px) {
+  nav .container-nav {
+    padding: 0 4.375rem 0 clamp(4.375rem, 1.5964rem + 4.3373vw, 5.5rem);
+  }
   nav .container-nav .nav-menu {
     column-gap: 2.5rem;
   }
 }
+@media screen and (min-width: 1441px) {
+  nav .container-nav {
+    padding: 0 clamp(4.375rem, -40.7503rem + 50.1044vw, 19.375rem) 0 clamp(5.53125rem, -38.9359rem + 49.3737vw, 20.3125rem);
+  }
+}
 main section .container-sec1 {
-  padding: 7.25rem 2.1875rem 0 2.1875rem;
+  margin: 0 2.1875rem;
+  padding: 7.25rem 0 0 0;
   display: flex;
   flex-direction: column;
   row-gap: 2.0625rem;
@@ -250,7 +268,7 @@ main section .container-sec1 .heading {
   row-gap: 1.0625rem;
 }
 main section .container-sec1 .heading h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: PoppinsSemibold, sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 2.375rem;
@@ -259,7 +277,7 @@ main section .container-sec1 .heading h1 {
   text-align: center;
 }
 main section .container-sec1 .heading p {
-  font-family: "Poppins", sans-serif;
+  font-family: PoppinsRegular, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
@@ -284,32 +302,51 @@ main section .container-sec1 .content button {
   background-color: #285E67;
   border: none;
   color: #FFFFFF;
-  font-family: "Poppins", sans-serif;
+  font-family: PoppinsSemibold, sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 1.375rem;
   line-height: 1.5;
   color: #FFFFFF;
+  cursor: pointer;
 }
 main section .container-sec1 .content .images {
   display: flex;
   flex-direction: column;
   row-gap: 1.75rem;
+}
+main section .container-sec1 .content .images .image-container {
+  position: relative;
+}
+main section .container-sec1 .content .images .image-container img {
   width: 100%;
+  display: block;
 }
-main section .container-sec1 .content .images img {
+main section .container-sec1 .content .images .image-container .image-overley {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  align-self: center;
-  max-width: 360px;
-  max-height: 390px;
-  min-width: 250px;
-  min-height: 271px;
+  height: 100%;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 1s;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-main section .container-sec1 .content .images-tablet {
-  display: none;
+main section .container-sec1 .content .images .image-container .image-overley h3 {
+  font-family: PoppinsSemibold, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  color: #FFFFFF;
 }
-main section .container-sec1 .content .images-desktop {
-  display: none;
+main section .container-sec1 .content .images .image-container:hover .image-overley {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
 }
 main section .container-sec2 {
   margin: 2.25rem 2.1875rem;
@@ -329,7 +366,7 @@ main section .container-sec2 article .heading {
   height: 100%;
 }
 main section .container-sec2 article .heading h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: PoppinsSemibold, sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: clamp(1.875rem, 0.0568rem + 9.0909vw, 2.5rem);
@@ -352,7 +389,7 @@ main section .container-sec2 article .content .sub-content {
   align-items: center;
 }
 main section .container-sec2 article .content .sub-content p {
-  font-family: "Poppins", sans-serif;
+  font-family: PoppinsRegular, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: clamp(0.875rem, 0.5114rem + 1.8182vw, 1rem);
@@ -370,9 +407,40 @@ main section .container-sec3 {
   row-gap: 1.5625rem;
   margin: 0 2.1875rem;
 }
+main section .container-sec3 .product {
+  position: relative;
+  cursor: pointer;
+}
 main section .container-sec3 .product img {
+  display: block;
   width: 100%;
   border-radius: 1rem;
+}
+main section .container-sec3 .product .image-overley {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+  opacity: 0;
+}
+main section .container-sec3 .product .image-overley h3 {
+  font-family: PoppinsSemibold, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  color: #FFFFFF;
+}
+main section .container-sec3 .product:hover .image-overley {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
 }
 main section .container-sec3 .product-content {
   display: flex;
@@ -386,7 +454,7 @@ main section .container-sec3 .product-content .product-info {
   text-align: center;
 }
 main section .container-sec3 .product-content .product-info h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: PoppinsSemibold, sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: clamp(2rem, 0.4762rem + 7.619vw, 2.5rem);
@@ -394,7 +462,7 @@ main section .container-sec3 .product-content .product-info h2 {
   color: #2A2A2A;
 }
 main section .container-sec3 .product-content .product-info p {
-  font-family: "Poppins", sans-serif;
+  font-family: PoppinsRegular, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: clamp(0.875rem, 0.494rem + 1.9048vw, 1rem);
@@ -416,7 +484,7 @@ main section .container-sec3 .product-content .product-list .product svg {
 }
 main section .container-sec3 .product-content .product-list .product p {
   width: 85%;
-  font-family: "Poppins", sans-serif;
+  font-family: PoppinsRegular, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: clamp(0.875rem, 0.494rem + 1.9048vw, 1rem);
@@ -426,14 +494,149 @@ main section .container-sec3 .product-content .product-list .product p {
 main section .container-sec3 .product-content .product-list .product p span {
   display: none;
 }
+main section .container-sec4 {
+  margin: 2.25rem 2.1875rem;
+  padding: 3.1875rem 0 2.6875rem 0;
+  background-color: #f4f4f4;
+  border-radius: 0.75rem;
+}
+main section .container-sec4 .image {
+  display: none;
+}
+main section .container-sec4 .content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5625rem;
+}
+main section .container-sec4 .content .heading {
+  text-align: center;
+}
+main section .container-sec4 .content .heading h2 {
+  font-family: PoppinsSemibold, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: clamp(2rem, 0.5455rem + 7.2727vw, 2.5rem);
+  line-height: clamp(2.4375rem, 0.983rem + 7.2727vw, 2.9375rem);
+  color: #2A2A2A;
+  padding: 0 clamp(1.75rem, -0.25rem + 10vw, 2.4375rem);
+}
+main section .container-sec4 .content .content-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5625rem;
+}
+main section .container-sec4 .content .content-list .list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+  text-align: center;
+  align-items: center;
+}
+main section .container-sec4 .content .content-list .list p {
+  font-family: PoppinsRegular, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(0.875rem, 0.5114rem + 1.8182vw, 1rem);
+  line-height: clamp(1.25rem, 0.5227rem + 3.6364vw, 1.5rem);
+  color: #2A2A2A;
+  padding: 0 clamp(1.75rem, -0.25rem + 10vw, 2.4375rem);
+}
+main section .container-sec5 {
+  margin: 0 2.1875rem 3.75rem 2.1875rem;
+}
+main section .container-sec5 .content-top {
+  padding: clamp(2.1875rem, -4.5398rem + 33.6364vw, 4.5rem) clamp(1.5625rem, -5.1648rem + 33.6364vw, 3.875rem) clamp(3.125rem, -5.9659rem + 45.4545vw, 6.25rem) clamp(1.5625rem, -5.1648rem + 33.6364vw, 3.875rem);
+  background: url("../img/mobile/forest.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  border-radius: 0.75rem;
+}
+main section .container-sec5 .content-top .top-heading {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8125rem;
+}
+main section .container-sec5 .content-top .top-heading .heading-icon {
+  align-self: center;
+}
+main section .container-sec5 .content-top .top-heading .heading-icon svg {
+  width: 3rem;
+  height: 2.6875rem;
+}
+main section .container-sec5 .content-top .top-heading .heading-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8125rem;
+  align-items: center;
+}
+main section .container-sec5 .content-top .top-heading .heading-content .content-text {
+  text-align: center;
+  padding: 0 clamp(0rem, -3.4545rem + 17.2727vw, 1.1875rem);
+}
+main section .container-sec5 .content-top .top-heading .heading-content .content-text h2 {
+  font-family: PoppinsSemibold, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.3125rem;
+  line-height: 1.9375rem;
+  color: #FFFFFF;
+}
+main section .container-sec5 .content-top .top-heading .heading-content .content-text p {
+  display: none;
+}
+main section .container-sec5 .content-top .top-heading .heading-content .content-btn button {
+  width: clamp(10.25rem, 4.7955rem + 27.2727vw, 12.125rem);
+  height: 2.875rem;
+  border-radius: 4.1875rem;
+  background-color: transparent;
+  border: 1px solid #f4f4f4;
+  color: #FFFFFF;
+  font-family: PoppinsSemibold, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+main section .container-sec5 .content-bottom {
+  background-color: #FCE2D7;
+  border-radius: 0.75rem;
+  margin: clamp(-4.4375rem, 5.5795rem - 37.2727vw, -1.875rem) clamp(0.9375rem, -1.9716rem + 14.5455vw, 1.9375rem) 0 clamp(0.9375rem, -1.9716rem + 14.5455vw, 1.9375rem);
+}
+main section .container-sec5 .content-bottom .bottom-list {
+  padding: clamp(1.875rem, -5.5795rem + 37.2727vw, 4.4375rem) 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(1.8125rem, -1.8239rem + 18.1818vw, 3.0625rem);
+}
+main section .container-sec5 .content-bottom .bottom-list .list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(0.625rem, -0.8295rem + 7.2727vw, 1.125rem);
+  align-items: center;
+}
+main section .container-sec5 .content-bottom .bottom-list .list svg {
+  width: clamp(3.125rem, 1.3068rem + 9.0909vw, 3.75rem);
+  height: clamp(3.125rem, 1.3068rem + 9.0909vw, 3.75rem);
+}
+main section .container-sec5 .content-bottom .bottom-list .list p {
+  font-family: PoppinsRegular, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1rem, 0.0909rem + 4.5455vw, 1.3125rem);
+  line-height: 1.5rem;
+  color: #2A2A2A;
+}
 
 @media screen and (min-width: 700px) {
   main section .container-sec1 {
-    padding: 7.25rem 4.375rem 0 4.375rem;
-    height: 55.25rem;
+    margin: 0 4.375rem;
+    padding: 7.25rem 0 0 0;
   }
   main section .container-sec1 .heading h1 {
-    font-family: "Poppins", sans-serif;
+    font-family: PoppinsSemibold, sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 4.0625rem;
@@ -441,7 +644,7 @@ main section .container-sec3 .product-content .product-list .product p span {
     color: #2A2A2A;
   }
   main section .container-sec1 .heading p {
-    font-family: "Poppins", sans-serif;
+    font-family: PoppinsRegular, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
@@ -460,25 +663,18 @@ main section .container-sec3 .product-content .product-list .product p span {
     color: #FFFFFF;
   }
   main section .container-sec1 .content .images {
-    display: none;
-  }
-  main section .container-sec1 .content .images-tablet {
     display: flex;
     flex-direction: row;
     column-gap: 1.75rem;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    row-gap: 0;
   }
-  main section .container-sec1 .content .images-tablet img {
-    width: 100%;
-    min-width: 226px;
-    min-height: 195px;
-    max-width: 427px;
-    max-height: 390px;
+  main section .container-sec1 .content .images .image-container:nth-child(1) img {
+    content: url("../img/tablet/minimalistic.jpg");
   }
-  main section .container-sec1 .content .images-desktop {
-    display: none;
+  main section .container-sec1 .content .images .image-container:nth-child(2) img {
+    content: url("../img/tablet/Clean-food.jpg");
   }
   main section .container-sec2 {
     margin: 5rem 4.375rem;
@@ -490,7 +686,7 @@ main section .container-sec3 .product-content .product-list .product p span {
     padding: 4rem 0 0 0;
   }
   main section .container-sec2 article .heading h2 {
-    font-family: "Poppins", sans-serif;
+    font-family: PoppinsSemibold, sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: clamp(2.5rem, 1.1497rem + 3.0864vw, 3.125rem);
@@ -536,7 +732,7 @@ main section .container-sec3 .product-content .product-list .product p span {
     text-align: start;
   }
   main section .container-sec3 .product-content .product-info h2 {
-    font-family: "Poppins", sans-serif;
+    font-family: PoppinsSemibold, sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: clamp(1.25rem, -4.375rem + 11.7188vw, 3.125rem);
@@ -544,7 +740,7 @@ main section .container-sec3 .product-content .product-list .product p span {
     color: #2A2A2A;
   }
   main section .container-sec3 .product-content .product-info p {
-    font-family: "Poppins", sans-serif;
+    font-family: PoppinsRegular, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: clamp(0.75rem, 0rem + 1.5625vw, 1rem);
@@ -564,7 +760,7 @@ main section .container-sec3 .product-content .product-list .product p span {
   }
   main section .container-sec3 .product-content .product-list .product p {
     width: 87%;
-    font-family: "Poppins", sans-serif;
+    font-family: PoppinsRegular, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: clamp(0.75rem, 0rem + 1.5625vw, 1rem);
@@ -574,38 +770,147 @@ main section .container-sec3 .product-content .product-list .product p span {
   main section .container-sec3 .product-content .product-list .product p span {
     display: inline;
   }
+  main section .container-sec4 {
+    margin: 5rem 4.375rem;
+    padding: clamp(4.375rem, -0.6211rem + 11.4198vw, 6.6875rem) clamp(3.125rem, -12.9437rem + 36.7284vw, 10.5625rem) clamp(4.375rem, -0.6211rem + 11.4198vw, 6.6875rem) clamp(3.125rem, -13.3488rem + 37.6543vw, 10.75rem);
+  }
+  main section .container-sec4 .content {
+    row-gap: clamp(3.75rem, -1.5162rem + 12.037vw, 6.1875rem);
+  }
+  main section .container-sec4 .content .heading h2 {
+    font-family: PoppinsSemibold, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(2.625rem, 1.5448rem + 2.4691vw, 3.125rem);
+    line-height: 1.875rem;
+    color: #2A2A2A;
+    padding: 0;
+  }
+  main section .container-sec4 .content .content-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: clamp(2.5rem, -1.4159rem + 8.9506vw, 4.3125rem);
+    row-gap: 0rem;
+  }
+  main section .container-sec4 .content .content-list .list p {
+    font-family: PoppinsRegular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #2A2A2A;
+    padding: 0;
+  }
+  main section .container-sec5 {
+    margin: 0 4.375rem 5.46875rem 4.375rem;
+  }
+  main section .container-sec5 .content-top {
+    padding: clamp(3.4375rem, -3.9892rem + 16.9753vw, 6.875rem) clamp(3.65625rem, -4.2431rem + 18.0556vw, 7.3125rem) clamp(7.46875rem, -8.6674rem + 36.8827vw, 14.9375rem) clamp(3.65625rem, -4.2431rem + 18.0556vw, 7.3125rem);
+    background: url("../img/tablet/forest.jpg") no-repeat center;
+    background-size: 100% 100%;
+  }
+  main section .container-sec5 .content-top .top-heading {
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(1.25rem, -2.1258rem + 7.716vw, 2.8125rem);
+  }
+  main section .container-sec5 .content-top .top-heading .heading-icon svg {
+    width: 5.75rem;
+    height: 5.125rem;
+  }
+  main section .container-sec5 .content-top .top-heading .heading-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(0.875rem, -1.0154rem + 4.321vw, 1.75rem);
+  }
+  main section .container-sec5 .content-top .top-heading .heading-content .content-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(0.5rem, -0.0401rem + 1.2346vw, 0.75rem);
+    padding: 0;
+  }
+  main section .container-sec5 .content-top .top-heading .heading-content .content-text h2 {
+    font-family: PoppinsSemibold, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(1.875rem, 0.7948rem + 2.4691vw, 2.375rem);
+    line-height: 2.25rem;
+    color: #FFFFFF;
+  }
+  main section .container-sec5 .content-top .top-heading .heading-content .content-text p {
+    display: block;
+    font-family: PoppinsRegular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(0.875rem, 0.6049rem + 0.6173vw, 1rem);
+    line-height: 1.5rem;
+    color: #FFFFFF;
+  }
+  main section .container-sec5 .content-top .top-heading .heading-content .content-btn button {
+    width: 16.0625rem;
+    height: 3.5rem;
+    border-radius: 4.1875rem;
+    background-color: transparent;
+    border: 1px solid #f4f4f4;
+    color: #FFFFFF;
+    font-family: PoppinsSemibold, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.3125rem;
+    line-height: 1.5rem;
+    color: #FFFFFF;
+  }
+  main section .container-sec5 .content-bottom {
+    margin: clamp(-11.9375rem, 6.9267rem - 29.4753vw, -5.96875rem) clamp(2.1875rem, -2.6061rem + 10.9568vw, 4.40625rem) 0 clamp(2.1875rem, -2.6061rem + 10.9568vw, 4.40625rem);
+  }
+  main section .container-sec5 .content-bottom .bottom-list {
+    padding: 4.4375rem clamp(2.0625rem, -2.3935rem + 10.1852vw, 4.125rem);
+    display: flex;
+    flex-direction: row;
+    column-gap: 0rem;
+    row-gap: 3.0625rem;
+    flex-wrap: wrap;
+  }
+  main section .container-sec5 .content-bottom .bottom-list .list {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.125rem;
+  }
+  main section .container-sec5 .content-bottom .bottom-list .list svg {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+  main section .container-sec5 .content-bottom .bottom-list .list p {
+    font-family: PoppinsRegular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1.125rem, 0.7199rem + 0.9259vw, 1.3125rem);
+    line-height: 1.5rem;
+    color: #2A2A2A;
+  }
 }
 @media screen and (min-width: 1025px) {
   main section .container-sec1 {
-    padding: 12.5rem 4.375rem 0 4.375rem;
-    height: 53.875rem;
+    margin: 0 4.375rem;
+    padding: 12.5rem 0 0 0;
   }
   main section .container-sec1 .heading p br {
     display: none;
   }
   main section .container-sec1 .content .images {
-    display: none;
-  }
-  main section .container-sec1 .content .images-tablet {
-    display: none;
-  }
-  main section .container-sec1 .content .images-desktop {
     display: flex;
     flex-direction: row;
-    column-gap: 3rem;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    column-gap: clamp(1.25rem, -3.0723rem + 6.747vw, 3rem);
   }
-  main section .container-sec1 .content .images-desktop img {
-    width: 100%;
-    max-width: 626px;
-    max-height: 391px;
-    min-width: 419px;
-    min-height: 261px;
+  main section .container-sec1 .content .images .image-container:nth-child(1) img {
+    content: url("../img/desktop/minimalistic.jpg");
+  }
+  main section .container-sec1 .content .images .image-container:nth-child(2) img {
+    content: url("../img/desktop/Clean-food.jpg");
   }
   main section .container-sec2 {
-    margin: 6.5rem 4.8611111111%;
+    margin: 6.5rem 4.375rem;
     display: flex;
     flex-direction: row;
     column-gap: 0.3125rem;
@@ -618,7 +923,7 @@ main section .container-sec3 .product-content .product-list .product p span {
     padding: 6.1875rem 0 0 0;
   }
   main section .container-sec2 article .heading h2 {
-    font-family: "Poppins", sans-serif;
+    font-family: PoppinsSemibold, sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: clamp(2.5rem, 1.1497rem + 3.0864vw, 3.125rem);
@@ -670,8 +975,139 @@ main section .container-sec3 .product-content .product-list .product p span {
   main section .container-sec3 .product-content .product-list .product p {
     width: 91%;
   }
+  main section .container-sec4 {
+    margin: 6.5rem 4.375rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: clamp(2.5rem, -4.7553rem + 11.3253vw, 5.4375rem);
+    padding: clamp(3.125rem, -4.5934rem + 12.0482vw, 6.25rem) clamp(3.125rem, -6.7545rem + 15.4217vw, 7.125rem);
+  }
+  main section .container-sec4 .image {
+    display: block;
+    width: 100%;
+  }
+  main section .container-sec4 .image img {
+    width: 100%;
+    animation-name: identifier;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes identifier {
+    from {
+      content: url("../img/desktop/fruit-juice.png");
+    }
+    to {
+      content: url("../img/desktop/fruit-juice-active.png");
+    }
+  }
+  main section .container-sec4 .content {
+    padding: 1.5rem 0 0 0;
+    row-gap: clamp(1.5625rem, -2.6054rem + 6.506vw, 3.25rem);
+    justify-content: center;
+  }
+  main section .container-sec4 .content .heading {
+    text-align: start;
+  }
+  main section .container-sec4 .content .heading h2 {
+    font-family: PoppinsSemibold, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(2.75rem, 1.8238rem + 1.4458vw, 3.125rem);
+    line-height: 1.875rem;
+    color: #2A2A2A;
+  }
+  main section .container-sec4 .content .content-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: clamp(1.25rem, -6.314rem + 11.8072vw, 4.3125rem);
+  }
+  main section .container-sec4 .content .content-list .list {
+    align-items: start;
+    text-align: start;
+  }
+  main section .container-sec4 .content .content-list .list p {
+    font-family: PoppinsRegular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #2A2A2A;
+  }
+  main section .container-sec5 {
+    margin: 0 4.375rem 7.375rem 4.375rem;
+  }
+  main section .container-sec5 .content-top {
+    padding: clamp(3.4375rem, -5.0527rem + 13.253vw, 6.875rem) clamp(10.1875rem, -14.9744rem + 39.2771vw, 20.375rem) clamp(7.46875rem, -10.9782rem + 28.7952vw, 14.9375rem) clamp(10.1875rem, -14.9744rem + 39.2771vw, 20.375rem);
+    background: url("../img/desktop/forest.jpg") no-repeat center;
+    background-size: 100% 100%;
+  }
+  main section .container-sec5 .content-top .top-heading {
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(1.875rem, -0.4405rem + 3.6145vw, 2.8125rem);
+  }
+  main section .container-sec5 .content-top .top-heading .heading-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(1.25rem, 0.0151rem + 1.9277vw, 1.75rem);
+  }
+  main section .container-sec5 .content-top .top-heading .heading-content .content-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+  }
+  main section .container-sec5 .content-top .top-heading .heading-content .content-text h2 {
+    font-family: PoppinsSemibold, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(2rem, 1.0738rem + 1.4458vw, 2.375rem);
+    line-height: 2.25rem;
+    color: #FFFFFF;
+  }
+  main section .container-sec5 .content-top .top-heading .heading-content .content-text p {
+    font-family: PoppinsRegular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(0.875rem, 0.5663rem + 0.4819vw, 1rem);
+    line-height: 1.5rem;
+    color: #FFFFFF;
+  }
+  main section .container-sec5 .content-bottom {
+    margin: clamp(-11.9375rem, 8.7733rem - 23.012vw, -5.96875rem) clamp(2.1875rem, -2.9838rem + 8.0723vw, 4.28125rem) 0 clamp(2.1875rem, -2.9838rem + 8.0723vw, 4.28125rem);
+  }
+  main section .container-sec5 .content-bottom .bottom-list {
+    row-gap: 0rem;
+    padding: 7.4375rem clamp(2.0625rem, -3.0316rem + 7.9518vw, 4.125rem);
+    display: flex;
+    flex-direction: row;
+    column-gap: 0rem;
+    flex-wrap: nowrap;
+  }
+  main section .container-sec5 .content-bottom .bottom-list .list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.6875rem;
+  }
+  main section .container-sec5 .content-bottom .bottom-list .list svg {
+    width: clamp(4.5rem, 2.9563rem + 2.4096vw, 5.125rem);
+    height: clamp(4.5rem, 2.9563rem + 2.4096vw, 5.125rem);
+  }
+  main section .container-sec5 .content-bottom .bottom-list .list p {
+    font-family: PoppinsRegular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1.125rem, 0.6619rem + 0.7229vw, 1.3125rem);
+    line-height: 1.5rem;
+    color: #2A2A2A;
+  }
 }
 @media screen and (min-width: 1441px) {
+  main section .container-sec1 {
+    padding: 12.5rem 0 0 0;
+    max-width: 81.25rem;
+    margin: 0 auto;
+  }
   main section .container-sec2 {
     margin: 6.5rem auto;
     max-width: 81.25rem;
@@ -679,6 +1115,118 @@ main section .container-sec3 .product-content .product-list .product p span {
   main section .container-sec3 {
     margin: 6.5rem auto;
     max-width: 81.25rem;
+  }
+  main section .container-sec4 {
+    margin: 6.5rem auto;
+    max-width: 81.25rem;
+  }
+  main section .container-sec5 {
+    margin: 0rem auto 6.5rem auto;
+    max-width: 81.25rem;
+  }
+}
+footer .container-footer {
+  background-color: #285E67;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.25rem;
+  padding: 4.875rem clamp(4.375rem, -6.8977rem + 56.3636vw, 8.25rem);
+}
+footer .container-footer .logo {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.625rem;
+  padding: 0 clamp(0rem, -13.117rem + 48.694vw, 8.15625rem);
+}
+footer .container-footer .logo .circle {
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  width: 1.625rem;
+  height: 1.625rem;
+}
+footer .container-footer .logo h1 {
+  font-family: PoppinsSemibold, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.3125rem;
+  line-height: 1.5rem;
+  color: #FFFFFF;
+}
+footer .container-footer .links {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0rem;
+  row-gap: 2.25rem;
+  flex-wrap: wrap;
+  padding: 0 clamp(0rem, -13.117rem + 48.694vw, 8.15625rem);
+}
+footer .container-footer .links a {
+  flex-basis: 50%;
+  text-decoration: none;
+  font-family: PoppinsRegular, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #FFFFFF;
+}
+footer .container-footer .links a:hover {
+  text-decoration: underline;
+}
+footer .container-footer .icons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.5rem;
+  padding: 0 clamp(0rem, -13.117rem + 48.694vw, 8.15625rem);
+}
+footer .container-footer .icons svg {
+  width: 1.625rem;
+  height: 1.625rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+  footer .container-footer {
+    padding: 4.875rem 8.6875rem;
+  }
+  footer .container-footer .logo {
+    padding: 0;
+  }
+  footer .container-footer .links {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.5rem;
+    row-gap: 0rem;
+    padding: 0;
+  }
+  footer .container-footer .links a {
+    flex-basis: 0%;
+  }
+  footer .container-footer .icons {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  footer .container-footer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0rem;
+    flex-wrap: wrap;
+  }
+  footer .container-footer .logo {
+    flex-basis: 50%;
+  }
+  footer .container-footer .links {
+    flex-basis: 50%;
+    justify-content: end;
+  }
+  footer .container-footer .icons {
+    flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 1441px) {
+  footer .container-footer {
+    padding: 4.875rem clamp(8.6875rem, -36.3438rem + 50vw, 23.65625rem);
   }
 }
 

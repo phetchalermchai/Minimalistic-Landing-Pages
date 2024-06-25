@@ -1,0 +1,216 @@
+@mixin content5(){
+    // mobile
+    section{
+        .container-sec5{
+            margin: 0 2.1875rem 3.75rem 2.1875rem;
+
+            .content-top{
+                padding: clamp(2.1875rem, -4.5398rem + 33.6364vw, 4.5rem) clamp(1.5625rem, -5.1648rem + 33.6364vw, 3.875rem) clamp(3.125rem, -5.9659rem + 45.4545vw, 6.25rem) clamp(1.5625rem, -5.1648rem + 33.6364vw, 3.875rem);
+                background: url("../img/mobile/forest.jpg") no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                border-radius: 0.75rem;
+
+                .top-heading{
+                    @include flex-column(0.8125rem);
+                    .heading-icon{
+                        align-self: center;
+                        svg{
+                            width: 3rem;
+                            height: 2.6875rem;
+                        }
+                    }
+                    .heading-content{
+                        @include flex-column(0.8125rem);
+                        align-items: center;
+
+                        .content-text{
+                            text-align: center;
+                            padding: 0 clamp(0rem, -3.4545rem + 17.2727vw, 1.1875rem);
+
+                            h2{
+                                @include semibold(1.3125rem,1.9375rem,$primary4);
+                            }
+                            p{
+                                display: none;
+                            }
+                        } 
+
+                        .content-btn{
+                            button{
+                                @include btn(clamp(10.25rem, 4.7955rem + 27.2727vw, 12.125rem),2.875rem,4.1875rem,transparent,1px solid #f4f4f4,$primary4);
+                                @include semibold(1rem,1.5rem,$primary4);
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content-bottom{
+                background-color: #FCE2D7;
+                border-radius: 0.75rem;
+                margin: clamp(-4.4375rem, 5.5795rem + -37.2727vw, -1.875rem) clamp(0.9375rem, -1.9716rem + 14.5455vw, 1.9375rem) 0 clamp(0.9375rem, -1.9716rem + 14.5455vw, 1.9375rem);
+
+                .bottom-list{
+                    padding: clamp(1.875rem, -5.5795rem + 37.2727vw, 4.4375rem) 0;
+                    @include flex-column(clamp(1.8125rem, -1.8239rem + 18.1818vw, 3.0625rem));
+
+                    .list{
+                        text-align: center;
+                        @include flex-column(clamp(0.625rem, -0.8295rem + 7.2727vw, 1.125rem));
+                        align-items: center;
+
+                        svg{
+                            width: clamp(3.125rem, 1.3068rem + 9.0909vw, 3.75rem);
+                            height: clamp(3.125rem, 1.3068rem + 9.0909vw, 3.75rem);
+                        }
+
+                        p{
+                            @include regular(clamp(1rem, 0.0909rem + 4.5455vw, 1.3125rem),1.5rem,$primary2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin content5-tablet(){
+    // tablet
+    section{
+        .container-sec5{
+            margin: 0 4.375rem 5.46875rem 4.375rem;
+
+            .content-top{
+                padding: clamp(3.4375rem, -3.9892rem + 16.9753vw, 6.875rem) clamp(3.65625rem, -4.2431rem + 18.0556vw, 7.3125rem) clamp(7.46875rem, -8.6674rem + 36.8827vw, 14.9375rem) clamp(3.65625rem, -4.2431rem + 18.0556vw, 7.3125rem);
+                background: url("../img/tablet/forest.jpg") no-repeat center;
+                background-size: 100% 100%;
+
+                .top-heading{
+                    @include flex-column(clamp(1.25rem, -2.1258rem + 7.716vw, 2.8125rem));
+
+                    .heading-icon{
+                        svg{
+                            width: 5.75rem;
+                            height: 5.125rem;
+                        }
+                    }
+                    .heading-content{
+                        @include flex-column(clamp(0.875rem, -1.0154rem + 4.321vw, 1.75rem));
+
+                        .content-text{
+                            @include flex-column(clamp(0.5rem, -0.0401rem + 1.2346vw, 0.75rem));
+                            padding: 0;
+
+                            h2{
+                                @include semibold(clamp(1.875rem, 0.7948rem + 2.4691vw, 2.375rem),2.25rem,$primary4);
+                            }
+                            p{
+                                display: block;
+                                @include regular(clamp(0.875rem, 0.6049rem + 0.6173vw, 1rem),1.5rem,$primary4);
+                            }
+                        } 
+
+                        .content-btn{
+                            button{
+                                @include btn(16.0625rem,3.5rem,4.1875rem,transparent,1px solid #f4f4f4,$primary4);
+                                @include semibold(1.3125rem,1.5rem,$primary4);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content-bottom{
+                margin: clamp(-11.9375rem, 6.9267rem + -29.4753vw, -5.96875rem) clamp(2.1875rem, -2.6061rem + 10.9568vw, 4.40625rem) 0 clamp(2.1875rem, -2.6061rem + 10.9568vw, 4.40625rem);
+
+                .bottom-list{
+                    padding: 4.4375rem clamp(2.0625rem, -2.3935rem + 10.1852vw, 4.125rem);
+                    @include flex-row();
+                    row-gap: 3.0625rem;
+                    flex-wrap: wrap;
+
+                    .list{
+                        flex-basis: 50%;
+                        @include flex-column(1.125rem);
+
+                        svg{
+                            width: 3.75rem;
+                            height: 3.75rem;
+                        }
+
+                        p{
+                            @include regular(clamp(1.125rem, 0.7199rem + 0.9259vw, 1.3125rem),1.5rem,$primary2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin content5-desktop(){
+    // desktop
+    section{
+        .container-sec5{
+            margin: 0 4.375rem 7.375rem 4.375rem;
+
+            .content-top{
+                padding: clamp(3.4375rem, -5.0527rem + 13.253vw, 6.875rem) clamp(10.1875rem, -14.9744rem + 39.2771vw, 20.375rem) clamp(7.46875rem, -10.9782rem + 28.7952vw, 14.9375rem) clamp(10.1875rem, -14.9744rem + 39.2771vw, 20.375rem);
+                background: url("../img/desktop/forest.jpg") no-repeat center;
+                background-size: 100% 100%;
+
+                .top-heading{
+                    @include flex-column(clamp(1.875rem, -0.4405rem + 3.6145vw, 2.8125rem));
+
+                    .heading-content{
+                        @include flex-column(clamp(1.25rem, 0.0151rem + 1.9277vw, 1.75rem));
+
+                        .content-text{
+                            @include flex-column(0.75rem);
+
+                            h2{
+                                @include semibold(clamp(2rem, 1.0738rem + 1.4458vw, 2.375rem),2.25rem,$primary4);
+                            }
+                            p{
+                                @include regular(clamp(0.875rem, 0.5663rem + 0.4819vw, 1rem),1.5rem,$primary4);
+                            }
+                        } 
+                    }
+                }
+            }
+
+            .content-bottom{
+                margin: clamp(-11.9375rem, 8.7733rem + -23.012vw, -5.96875rem) clamp(2.1875rem, -2.9838rem + 8.0723vw, 4.28125rem) 0 clamp(2.1875rem, -2.9838rem + 8.0723vw, 4.28125rem);
+
+                .bottom-list{
+                    row-gap: 0rem;
+                    padding: 7.4375rem clamp(2.0625rem, -3.0316rem + 7.9518vw, 4.125rem);
+                    @include flex-row();
+                    flex-wrap: nowrap;
+
+                    .list{
+                        @include flex-column(0.6875rem);
+
+                        svg{
+                            width: clamp(4.5rem, 2.9563rem + 2.4096vw, 5.125rem);
+                            height: clamp(4.5rem, 2.9563rem + 2.4096vw, 5.125rem);
+                        }
+
+                        p{
+                            @include regular(clamp(1.125rem, 0.6619rem + 0.7229vw, 1.3125rem),1.5rem,$primary2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin content5-desktop-xl(){
+    // desktop-xl
+    section{
+        .container-sec5{
+            margin: 0rem auto 6.5rem auto;
+            max-width: 81.25rem;
+        }
+    }
+}

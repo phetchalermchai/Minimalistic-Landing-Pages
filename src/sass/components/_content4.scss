@@ -1,0 +1,140 @@
+
+@mixin content4(){
+    // mobile
+
+    section{
+        .container-sec4{
+            margin: 2.25rem 2.1875rem;
+            padding: 3.1875rem 0 2.6875rem 0;
+            background-color: #f4f4f4;
+            border-radius: 0.75rem;
+
+            .image{
+                display: none;
+            }
+
+            .content{
+                @include flex-column(2.5625rem);
+
+                .heading{
+                    text-align: center;
+                    h2{
+                        @include semibold(clamp(2rem, 0.5455rem + 7.2727vw, 2.5rem),clamp(2.4375rem, 0.983rem + 7.2727vw, 2.9375rem),$primary2);
+                        padding: 0 clamp(1.75rem, -0.25rem + 10vw, 2.4375rem);
+                    }
+                }
+
+                .content-list{
+                    @include flex-column(2.5625rem);
+
+                    .list{
+                        @include flex-column(1.25rem);
+                        text-align: center;
+                        align-items: center;
+
+                        p{
+                            @include regular(clamp(0.875rem, 0.5114rem + 1.8182vw, 1rem),clamp(1.25rem, 0.5227rem + 3.6364vw, 1.5rem),$primary2);
+                            padding: 0 clamp(1.75rem, -0.25rem + 10vw, 2.4375rem);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin content4-tablet(){
+    // tablet
+    section{
+        .container-sec4{
+            margin: 5rem 4.375rem;
+            padding: clamp(4.375rem, -0.6211rem + 11.4198vw, 6.6875rem) clamp(3.125rem, -12.9437rem + 36.7284vw, 10.5625rem) clamp(4.375rem, -0.6211rem + 11.4198vw, 6.6875rem) clamp(3.125rem, -13.3488rem + 37.6543vw, 10.75rem);
+
+            .content{
+                row-gap: clamp(3.75rem, -1.5162rem + 12.037vw, 6.1875rem);
+                .heading{
+                    h2{
+                        @include semibold(clamp(2.625rem, 1.5448rem + 2.4691vw, 3.125rem),1.875rem,$primary2);
+                        padding: 0;
+                    }
+                }
+
+                .content-list{
+                    @include flex-row(clamp(2.5rem, -1.4159rem + 8.9506vw, 4.3125rem));
+                    row-gap: 0rem;
+
+                    .list{
+                        p{
+                            @include regular(1rem,1.5rem,$primary2);
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin content4-desktop(){
+    // desktop
+    section{
+        .container-sec4{
+            margin: 6.5rem 4.375rem;
+            @include flex-row(clamp(2.5rem, -4.7553rem + 11.3253vw, 5.4375rem));
+            padding: clamp(3.125rem, -4.5934rem + 12.0482vw, 6.25rem) clamp(3.125rem, -6.7545rem + 15.4217vw, 7.125rem);
+
+            .image{
+                display: block;
+                width: 100%;
+                img{
+                    width: 100%;
+                    animation-name: identifier;
+                    animation-duration: 5s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease-in-out;
+                }
+
+                @keyframes identifier {
+                    from {content: url("../img/desktop/fruit-juice.png");}
+                    to{content: url("../img/desktop/fruit-juice-active.png");}
+                }
+            }
+
+            .content{
+                padding: 1.5rem 0 0 0;
+                row-gap: clamp(1.5625rem, -2.6054rem + 6.506vw, 3.25rem);
+                justify-content: center;
+
+                .heading{
+                    text-align: start;
+                    h2{
+                        // รอแก้
+                        @include semibold(clamp(2.75rem, 1.8238rem + 1.4458vw, 3.125rem),1.875rem,$primary2);
+                    }
+                }
+
+                .content-list{
+                    @include flex-row(clamp(1.25rem, -6.314rem + 11.8072vw, 4.3125rem));
+                    
+                    .list{
+                        align-items: start;
+                        text-align: start;
+                        p{
+                            @include regular(1rem,1.5rem,$primary2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin content4-desktop-xl(){
+    // desktop xl
+    section{
+        .container-sec4{
+            margin: 6.5rem auto;
+            max-width: 81.25rem;
+        }
+    }
+}

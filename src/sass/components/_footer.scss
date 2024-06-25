@@ -1,0 +1,110 @@
+// mobile
+footer{
+    .container-footer{
+        background-color: $primary1;
+        @include flex-column(2.25rem);
+        padding: 4.875rem clamp(4.375rem, -6.8977rem + 56.3636vw, 8.25rem);
+
+        .logo{
+            @include flex-row(0.625rem);
+            padding: 0 clamp(0rem, -13.117rem + 48.694vw, 8.15625rem);
+
+            .circle{
+                background-color: #f4f4f4;
+                border-radius: 50%;
+                width: 1.625rem;
+                height: 1.625rem;
+            }
+            h1{
+                @include semibold(1.3125rem,1.5rem,$primary4)
+            }
+        }
+
+        .links{
+            @include flex-row();
+            row-gap: 2.25rem;
+            flex-wrap: wrap;
+            padding: 0 clamp(0rem, -13.117rem + 48.694vw, 8.15625rem);
+            a{
+                flex-basis: 50%;
+                text-decoration: none;
+                @include regular(1rem,1.125rem,$primary4)
+            }
+            a:hover{
+                text-decoration: underline
+            }
+        }
+
+        .icons{
+            @include flex-row(1.5rem);
+            padding: 0 clamp(0rem, -13.117rem + 48.694vw, 8.15625rem);
+            svg{
+                width: 1.625rem;
+                height: 1.625rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:700px) {
+    // tablet
+    footer{
+        .container-footer{
+            padding: 4.875rem 8.6875rem;
+    
+            .logo{
+                padding: 0;
+    
+            }
+    
+            .links{
+                @include flex-row(2.5rem);
+                row-gap: 0rem;
+                padding: 0;
+                a{
+                    flex-basis: 0%;
+                }
+            }
+    
+            .icons{
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1025px) {
+    // desktop
+    footer{
+        .container-footer{
+            @include flex-row();
+            flex-wrap: wrap;
+    
+            .logo{
+                flex-basis: 50%;
+
+            }
+    
+            .links{
+                flex-basis: 50%;
+                justify-content: end;
+                
+            }
+    
+            .icons{
+                flex-basis: 50%;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:1441px) {
+    // desktop-xl
+    footer{
+        .container-footer{
+            padding: 4.875rem clamp(8.6875rem, -36.3438rem + 50vw, 23.65625rem);
+        }
+    }
+}

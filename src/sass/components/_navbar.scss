@@ -12,6 +12,7 @@ nav{
         background-color: $primary4;
         padding: 0 2.1875rem;
         transition: 1s;
+        z-index: 999;
 
         .navbar{
             display: flex;
@@ -93,7 +94,8 @@ nav{
                 height: 0;
                 transition: 1s;
                 align-self: center;
-                img{
+                
+                svg{
                     width: 0;
                     height: 0;
                     transition: 1s;
@@ -170,7 +172,8 @@ nav{
 
             .menu-icons{
                 height: 1.6875rem;
-                img{
+
+                svg{
                     width: 1.6875rem;
                     height: 1.6875rem;
                     margin: 0 0.5rem;
@@ -259,10 +262,19 @@ nav{
 @media screen and (min-width:1025px) {
     nav{
         .container-nav{
-
+            padding: 0 4.375rem 0 clamp(4.375rem, 1.5964rem + 4.3373vw, 5.5rem);
             .nav-menu{
                 column-gap: 2.5rem;
             }
+        }
+    }
+}
+
+@media screen and (min-width:1441px) {
+    // desktop-xl
+    nav{
+        .container-nav{
+            padding: 0 clamp(4.375rem, -40.7503rem + 50.1044vw, 19.375rem) 0 clamp(5.53125rem, -38.9359rem + 49.3737vw, 20.3125rem);
         }
     }
 }
