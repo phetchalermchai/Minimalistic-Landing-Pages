@@ -42,6 +42,10 @@
                                 @include semibold(1rem,1.5rem,$primary4);
                                 cursor: pointer;
                             }
+                            button:hover{
+                                background-color: rgba(0, 0, 0,0.6);
+                                transition: 1s;
+                            }
                         }
                     }
                 }

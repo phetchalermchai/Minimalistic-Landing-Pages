@@ -8,16 +8,16 @@ hamburgerMenu.addEventListener("click",()=>{
     if (navbar.className === "container-nav") {
         navbar.className = "container-nav open"
         hiddenScroll.style.overflowY = "hidden"
-        hamburgerMenu.src = "src/img/mobile/ph_x.svg"
+        hamburgerMenu.src = "src/img/mobile/ph_x.png"
 
         circleLogo.style.background = ""
 
     } else {
         navbar.className = "container-nav"
-        hamburgerMenu.src = "src/img/mobile/hamburger_black.svg"
+        hamburgerMenu.src = "src/img/mobile/hamburger_black.png"
         hiddenScroll.style.overflowY = "auto"
         if (document.documentElement.scrollTop >= 70) {
-            hamburgerMenu.src = "src/img/mobile/hamburger-white.svg"
+            hamburgerMenu.src = "src/img/mobile/hamburger-white.png"
 
             circleLogo.style.background = "#FFFFFF"
         }
@@ -27,10 +27,10 @@ hamburgerMenu.addEventListener("click",()=>{
 const mbLogo = document.querySelector(".container-nav .navbar .nav-logo .logo-mobile .open")
 mbLogo.addEventListener("click",()=>{
     navbar.className = "container-nav"
-    hamburgerMenu.src = "src/img/mobile/hamburger_black.svg"
+    hamburgerMenu.src = "src/img/mobile/hamburger_black.png"
     hiddenScroll.style.overflowY = "auto"
     if (document.documentElement.scrollTop >= 70) {
-        hamburgerMenu.src = "src/img/mobile/hamburger-white.svg"
+        hamburgerMenu.src = "src/img/mobile/hamburger-white.png"
         circleLogo.style.background = "#FFFFFF"
     }
 })
@@ -39,10 +39,10 @@ const mbLink = document.querySelectorAll(".container-nav .nav-menu .menu-mobile"
 for (const iterator of mbLink) {
     iterator.addEventListener("click",()=>{
         navbar.className = "container-nav"
-        hamburgerMenu.src = "src/img/mobile/hamburger_black.svg"
+        hamburgerMenu.src = "src/img/mobile/hamburger_black.png"
         hiddenScroll.style.overflowY = "auto"
         if (document.documentElement.scrollTop >= 70) {
-            hamburgerMenu.src = "src/img/mobile/hamburger-white.svg"
+            hamburgerMenu.src = "src/img/mobile/hamburger-white.png"
 
             circleLogo.style.background = "#FFFFFF"
         }
@@ -58,7 +58,7 @@ window.onscroll = function() {
 
     if (scroll >=70) {
         navbar.style.background = "#285E67"
-        hamburgerMenu.src = "src/img/mobile/hamburger-white.svg"
+        hamburgerMenu.src = "src/img/mobile/hamburger-white.png"
 
         // circlelogo
         circleLogo.style.background = "#FFFFFF"
@@ -100,7 +100,7 @@ window.onscroll = function() {
         })
     }else{
         navbar.style.background = ""
-        hamburgerMenu.src = "src/img/mobile/hamburger_black.svg"
+        hamburgerMenu.src = "src/img/mobile/hamburger_black.png"
 
         // menudesktop
         for (const iterator of Link) {

@@ -310,6 +310,9 @@ main section .container-sec1 .content button {
   color: #FFFFFF;
   cursor: pointer;
 }
+main section .container-sec1 .content button:hover {
+  background-color: #22525a;
+}
 main section .container-sec1 .content .images {
   display: flex;
   flex-direction: column;
@@ -598,6 +601,10 @@ main section .container-sec5 .content-top .top-heading .heading-content .content
   line-height: 1.5rem;
   color: #FFFFFF;
   cursor: pointer;
+}
+main section .container-sec5 .content-top .top-heading .heading-content .content-btn button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 1s;
 }
 main section .container-sec5 .content-bottom {
   background-color: #FCE2D7;
@@ -988,18 +995,6 @@ main section .container-sec5 .content-bottom .bottom-list .list p {
   }
   main section .container-sec4 .image img {
     width: 100%;
-    animation-name: identifier;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-  }
-  @keyframes identifier {
-    from {
-      content: url("../img/desktop/fruit-juice.png");
-    }
-    to {
-      content: url("../img/desktop/fruit-juice-active.png");
-    }
   }
   main section .container-sec4 .content {
     padding: 1.5rem 0 0 0;

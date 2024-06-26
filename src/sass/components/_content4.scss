@@ -88,15 +88,6 @@
                 width: 100%;
                 img{
                     width: 100%;
-                    animation-name: identifier;
-                    animation-duration: 5s;
-                    animation-iteration-count: infinite;
-                    animation-timing-function: ease-in-out;
-                }
-
-                @keyframes identifier {
-                    from {content: url("../img/desktop/fruit-juice.png");}
-                    to{content: url("../img/desktop/fruit-juice-active.png");}
                 }
             }
 
